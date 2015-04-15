@@ -652,8 +652,9 @@
                 <windowController id="B8D-0N-5wS" customClass="NSWindowControllerExtension" customModule="desktopMascot" customModuleProvider="target" sceneMemberID="viewController">
                     <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" hasShadow="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
+                        <windowCollectionBehavior key="collectionBehavior" fullScreenPrimary="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+                        <rect key="contentRect" x="0.0" y="757" width="480" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
                     </window>
                     <connections>
@@ -670,19 +671,27 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="desktopMascot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="273"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hdX-xc-6yE">
-                                <rect key="frame" x="302" y="0.0" width="178" height="203"/>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hdX-xc-6yE">
+                                <rect key="frame" x="302" y="70" width="178" height="203"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="203" id="bt0-7Y-09H"/>
+                                    <constraint firstAttribute="width" constant="178" id="fkX-hb-FKB"/>
+                                </constraints>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="sd1" id="a1V-Me-pG1"/>
                             </imageView>
                         </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="hdX-xc-6yE" secondAttribute="bottom" constant="70" id="1En-fe-k7h"/>
+                            <constraint firstAttribute="trailing" secondItem="hdX-xc-6yE" secondAttribute="trailing" id="QZ0-bJ-3Gb"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="75" y="653.5"/>
         </scene>
     </scenes>
     <resources>

@@ -13,7 +13,10 @@ class ViewController: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        if let screen = NSScreen.mainScreen(){
+            self.view.frame = screen.frame;
+        }
         // Do any additional setup after loading the view.
     }
 

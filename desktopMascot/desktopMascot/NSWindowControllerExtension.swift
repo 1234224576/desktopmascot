@@ -18,6 +18,7 @@ class NSWindowControllerExtension: NSWindowController {
         self.mainWindow.backingType = NSBackingStoreType.Buffered
         self.mainWindow.styleMask = NSBorderlessWindowMask
         self.mainWindow.opaque = false
+
         // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
     }
 
